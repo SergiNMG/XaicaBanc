@@ -1,0 +1,42 @@
+:root{
+    --color-primary: #6d9fbc;
+    --color-secundary: #044257;
+
+    --color-white: #ffffff;
+}
+
+.c-card{
+    --c-card-back-ground-color:var(--color-white);
+
+    width: 400px;
+
+    border-radius: 10px;
+    border-width: 1px;
+
+    background-color: var(--c-card-back-ground-color);
+}
+
+.c-card__badges{
+    --c-badges-back-ground-color: var(--color-primary);
+    --c-badges-color-color: var(--color-secundary);
+
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 4px 8px 4px 8px;
+
+    border-radius: 10px;
+    border-width: 1px;
+
+    
+    
+    background-color: var(--c-badges-back-ground-color);
+    color: var(--c-badges-color-color);
+}
+
+.c-card__title{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
