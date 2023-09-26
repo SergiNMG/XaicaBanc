@@ -1,0 +1,14 @@
+:root{
+    --color-primary: #1b7ead;
+    --color-dark: #212529ff;
+    --color-light: #ffffff;
+}
+
+.l-section{
+    --l-section-color: var(--color-dark);
+
+    width: 100%;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+}
