@@ -2,22 +2,54 @@
     --color-primary: #1b7ead;
     --color-dark: #212529ff;
     --color-light: #ffffff;
+    --color-border: #E5E7E9;
+    --color-border__shadow: #D7DBDD;
+}
+
+.l-title{
+    text-align: center;
 }
 
 .l-section{
-    --l-section-color: var(--color-dark);
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     width: 100%;
-    overflow: hidden;
-    display: inline-flex;
+}
+
+.c-card{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: 
+        "image title"
+        "image ref";    
+    
+    width: 200px;
     align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    padding: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.c-card:hover{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.c-card__image{
+    grid-area: image;
+    margin-right: 10px;
 }
 
 .c-card__title {
     font-weight: bold;
+    grid-area: title;
 }
 
 .c-card__ref{
     color: var(--color-primary);
+    grid-area: ref;
 }
 
