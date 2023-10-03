@@ -1,5 +1,5 @@
 :root{
-    --color-primary: #D9ECF3;
+    --color-primary-card: #D9ECF3;
     --color-secundary: #007EAE;
     --color-border: #e5e7e9;
 
@@ -60,7 +60,7 @@
 }
 
 .c-badge{
-    --c-badges-back-ground-color: var(--color-primary);
+    --c-badges-back-ground-color: var(--color-primary-card);
     --c-badges-color-color: var(--color-secundary);
 
     font-family: sans-serif;
