@@ -1,0 +1,330 @@
+:root{
+    --color-primary: #1b7ead;
+    --color-dark: #212529ff;
+    --color-light: #ffffff;
+    --color-border: #E5E7E9;
+    --color-border__shadow: #D7DBDD;
+    --color-primary-card: #D9ECF3;
+    --color-secundary: #007EAE;
+    --color-border: #e5e7e9;
+    --color-white: #ffffff;
+    --color-fondo:rgb(223, 223, 223);
+    --title-size:25px;
+    --title-color: #333;
+    --desc-color:#666;
+    --color-normal:rgb(234, 234, 234);
+    --color-gris:#6c757d;
+    --color-link:#007eae;
+}
+
+.l-slider1{
+    display: flex;
+    width: 107%;
+}
+
+.c-slider-fotos{
+    height: 100%;
+}
+
+.c-image-slider1{
+    position: relative;
+    cursor: pointer;
+}
+
+.c-text-image{
+    border-width: 1px;
+    padding: 50px;
+    border-style: solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+}
+
+.c-text-image--titulo{
+    font-size: 40px;
+}
+
+.c-text-image--subtitulo{
+    font-size: 15px;
+    color: gray;
+}
+
+.c-boton-donativo{
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(37, 99, 191);
+    color: aliceblue;
+    font-size: 16px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Jorge */
+
+.l-title{
+    text-align: center;
+}
+
+.l-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.c-board{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: 
+        "image title"
+        "image ref";    
+    
+    width: 200px;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    padding: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.c-board:hover{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.c-board__image{
+    grid-area: image;
+    margin-right: 10px;
+}
+
+.c-board__title {
+    font-weight: bold;
+    grid-area: title;
+}
+
+.c-board__ref{
+    color: var(--color-primary);
+    grid-area: ref;
+}
+
+/* Sergi */
+
+.l-columns{
+    display: grid;
+    padding:  20px;
+}
+
+.l-columns--2{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.c-card{
+    --c-card-back-ground-color:var(--color-white);
+
+    border-radius: 10px;
+    border-width: 1px;
+    border: 1px solid var(--color-border);
+    margin: 25px;
+    padding: 30px;
+
+    display: grid;
+    grid-template-areas:
+        "izquierda derecha-arriba"
+        "izquierda derecha-abajo";
+    grid-template-columns: min-content auto;
+
+    background-color: var(--c-card-back-ground-color);
+
+    -webkit-box-shadow: 10px 10px 5px 1px rgba(240,235,240,1);
+    -moz-box-shadow: 10px 10px 5px 1px rgba(240,235,240,1);
+    box-shadow: 10px 10px 5px 1px rgba(240,235,240,1);
+    transition: box-shadow 0.3s;
+}
+
+.c-card:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.c-card__img{
+    grid-area: izquierda;
+    border-radius: 10px;
+    margin-right: 15px;
+    width: 175px;
+    height: 175px;
+}
+
+.c-card__img--large{
+    width: 300px;
+}
+
+.c-card__upper{
+    grid-area: derecha-arriba;
+}
+
+.c-badge{
+    --c-badges-back-ground-color: var(--color-primary-card);
+    --c-badges-color-color: var(--color-secundary);
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 4px 8px 4px 8px;
+
+    border-radius: 10px;
+    border-width: 1px;
+
+    background-color: var(--c-badges-back-ground-color);
+    color: var(--c-badges-color-color);
+}
+
+.c-card__lower{
+    grid-area: derecha-abajo;
+}
+
+.c-title{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Carlos */
+
+.c-title{
+    text-align: center;
+    font-size: var(--title-size);
+    color: var(--title-color);
+    font-family: 'OpenSans', Arial, serif;
+}
+
+.l-columns{
+    display: grid;
+    text-align: center;
+}
+
+.l-columns--4{
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.c-card-circled{
+    padding: 50px;
+    font-family: 'OpenSans', Arial, serif;
+}
+
+.c-card-circled__imagen{
+
+}
+
+.c-card-circled__title{
+    margin-top: 5px;
+    color: var(--title-color);
+}
+.c-card-circled__desc{
+    color: var(--desc-color);
+}
+.c-card-circled__link{
+    color: var(--color-secundary);
+    line-height: 2.1rem;
+    margin-top: 1.6rem;
+    text-decoration: underline;
+}
+
+/* Joan */
+
+.c-section{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.c-titulo{
+    font-family: sans-serif;
+    text-align: center; 
+    font-size: 36px;
+}
+
+.l-columns{
+    display: grid;
+    max-width: 80%;
+    margin: auto;
+}
+
+.l-columns--3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.c-card-icons{
+    margin-top: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18px;
+    padding: 0 10px;
+    max-width: 350px;
+}
+
+.c-card-icons__title{
+    font-weight: bold;
+}
+
+.c-card-icons__text{
+    color:var(--color-gris);
+}
+
+.c-card-icons__link{
+    color:var(--color-link);
+}
+
+/* Rafa */
+
+.l-columns-slider2{
+    display: grid;
+    max-width: 100%;
+}
+
+.l-columns-3{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.c-card-slider2{
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.c-card__image{
+    max-width: 400px;
+    filter: brightness(75%);
+}
+
+.c-card__image--destacada{
+    max-width: 480px;
+    filter:none;
+}
+
+.c-titulo-slider2{
+    color: #1a1a1a;
+    font-size: 30px;
+    text-align: center;
+}
+
+.c-card__texto{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;   
+    z-index: 1; 
+}
+
+/* Laura */
