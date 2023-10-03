@@ -1,0 +1,63 @@
+
+.l-slider1{
+display: flex;
+flex-direction:row;
+height: fit-content;
+}
+
+
+
+
+.c-image-slider1{
+    position: relative;
+    cursor: pointer;
+    
+}
+
+
+
+.c-text-image{
+    border-width: 1px;
+    padding: 50px;
+    border-style: solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    
+    cursor: pointer;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    bottom: 0;
+    
+    
+    }
+
+   
+.c-text-image--titulo{
+    font-size: 40px;
+}
+
+.c-text-image--subtitulo{
+    font-size: 15px;
+    color: gray;
+}
+
+.c-boton-donativo{
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(37, 99, 191);
+    color: aliceblue;
+    font-size: 16px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+
+}
+
