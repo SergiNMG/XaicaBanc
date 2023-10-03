@@ -7,7 +7,7 @@
     padding: auto;
 }
 
-.l-columns{
+.l-columns-slider2{
     display: grid;
     max-width: 100%;
 }
@@ -16,7 +16,7 @@
     grid-template-columns: repeat(3,1fr);
 }
 
-.c-card{
+.c-card-slider2{
     margin: auto;
     position: relative;
     display: flex;
@@ -24,17 +24,17 @@
     align-items: end;
 }
 
-.c-card__img{
+.c-card__image{
     max-width: 400px;
     filter: brightness(75%);    
 }
 
-.c-card__img--destacada{
+.c-card__image--destacada{
     max-width: 480px;
     filter:none;
 }
 
-.c-titulo{
+.c-titulo-slider2{
     color: #1a1a1a;
     font-size: 30px;
     text-align: center;
